@@ -9,6 +9,8 @@ fun main(args: Array<String>){
     arrayList.add("Green")
     arrayList.add("Violet")
 
+    println("\n $arrayList ")
+    println("\n ${arrayList.reverse()} ")
     println("\n .......ArrayList is .......")
     for (i in arrayList) {
         println(i)
