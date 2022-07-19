@@ -1,9 +1,6 @@
 package Examples
 
 class Collection {
-
-}
-
 fun main() {
     var list = listOf("A", "B", "C", "B", 1, 2, 3, 4, 2)
 
@@ -12,4 +9,4 @@ fun main() {
 }
 //    for (data in list) {
 //        println(data)}
-//}
+}

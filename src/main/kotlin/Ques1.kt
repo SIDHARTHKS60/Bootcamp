@@ -1,4 +1,4 @@
-//Leap year or not
+//Q1.1 Leap year or not
 fun main(args: Array<String>) {
     val year = 2020
     var leap = false

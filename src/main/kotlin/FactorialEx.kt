@@ -1,4 +1,6 @@
-class Factorial {
+//2.5
+
+class RecFunc {
     var fact = 0
     fun recursivelyCalculateFactorial(i: Int): Int {
         fact = 1
@@ -18,7 +20,8 @@ class Factorial {
         return fact
     }
 }
-class Ques25 {
+
+object FactorialE {
     fun main() {
         println("* Calculating factorial *")
         val factOb = RecFunc()
