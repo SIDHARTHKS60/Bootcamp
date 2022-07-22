@@ -1,4 +1,5 @@
 package Assgn3
+
 //3.6 Throws and Throw
 internal object ThrowsExecp {
     @Throws(IllegalAccessException::class)

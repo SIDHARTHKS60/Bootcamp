@@ -1,4 +1,5 @@
 package Assgn3
+
 //Ques 3.7
 object CatchBlocks {
     @JvmStatic
@@ -12,8 +13,7 @@ object CatchBlocks {
             println("ArrayIndexOutOfBounds Exception occurs")
         } catch (e: Exception) {
             println("Parent Exception occurs")
-        }
-        finally {
+        } finally {
             println("Inside finally ")
         }
         println("rest of the code")
