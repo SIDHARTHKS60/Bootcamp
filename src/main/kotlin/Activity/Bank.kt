@@ -6,15 +6,16 @@ class Bank {
     var acc_type=""
     var balance :Float=0.0f
 init {
-    println("Welcome to ABC bank")
+    println("\nWelcome to ABC bank")
 }
     fun open_account() {
         System.out.println("Enter your full name: ")
         name= readln()
         System.out.println("Enter your address: ")
         address = readln()
-        System.out.println("What type of account you want to open saving(S)or Current(C): ")
+        System.out.println("What type of account you want to open Saving(S) or Current(C): ")
         var acc_type = readln()
+        print(acc_type)
         System.out.println("Enter How much money you want to deposit: ")
         val sc = Scanner(System.`in`)
         val Deposit1 = sc.nextFloat()
@@ -33,30 +34,32 @@ init {
         println("Type: $acc_type")
         println("Balance: $balance")
     }
-fun withdraw () {
-    println("Enter the amount to be Withdrawn")
-    val sc = Scanner(System.`in`)
-    var withdraw= sc.nextFloat()
-    balance-=withdraw
-    if(balance<2000){
-        print("Not Able to Withdraw beyond limit of 2000 Rs")
-    }
-    else {
-        balance -= withdraw
-        println("Available balance $balance")
+    fun withdraw () {
+        println("Enter the amount to be Withdrawn")
+        val sc = Scanner(System.`in`)
+        var withdraw= sc.nextFloat()
+        balance-=withdraw
+        if(balance<2000){
+            print("Not Able to Withdraw beyond limit of 2000 Rs")
+        }
+        else {
+            balance -= withdraw
+            println("Available balance $balance")
     }}
 }
     fun main() {
         val o1= Bank()
-        println("Enter your choice : \n 1.Open Account \n 2.Deposit Amount \n 3.Display Account \n 4.Withdraw Amount")
-        val option = readln()
-        val result1=when(option){
-        "1" ->o1.open_account()
-         "2" -> o1.deposit_money()
-         "3" -> o1.display_account()
-         "4" -> o1.withdraw()
-        else -> "Enter a proper Option"
-        }
-        println(result1)
+        do {
+            println("*****************************\nEnter your choice : \n 1.Open Account \n 2.Deposit Amount \n 3.Display Account \n 4.Withdraw Amount")
+            print("Option : ")
+            val option = readln()
+            val result1 = when (option) {
+                "1" -> o1.open_account()
+                "2" -> o1.deposit_money()
+                "3" -> o1.display_account()
+                "4" -> o1.withdraw()
+                else -> "Enter a proper Option"
+            }
+            println(result1)
+        }while (1>0)
     }
-
