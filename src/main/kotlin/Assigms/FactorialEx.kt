@@ -20,8 +20,6 @@ class RecFunc {
         return fact
     }
 }
-
-
     fun main() {
         println("* Calculating factorial *")
         val factOb = RecFunc()
